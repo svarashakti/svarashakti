@@ -53,7 +53,8 @@ function Index() {
           <img src={heroImage} alt="The Ganges flowing through the Himalayan foothills at sunrise" width={1920} height={1080} />
           <div className="hero-overlay" />
           <div className="hero-content">
-            <div className="eyebrow">NAAD — NATURE IN MOTION</div><div className="symbol">◌</div>
+            <div className="eyebrow">NAAD — NATURE IN MOTION</div>
+            <div className="hero-logo-wrap"><img className="hero-logo" src={logoAsset.url} alt="Svarashakti owl emblem" /></div>
             <h1>Svarashakti</h1><p className="hero-tag">The Power of Sound</p>
             <p className="location">Rishikesh, Uttarakhand · India</p>
             <div className="hero-actions"><Button asChild variant="gold" size="hero"><a href="#courses">Explore Courses</a></Button><Button asChild variant="glass" size="hero"><a href="#experience">Meet the Facilitator</a></Button></div>
@@ -71,7 +72,7 @@ function Index() {
           <div className="section-kicker">TRAINING PROGRAMS</div><h2>Courses &amp; Certifications</h2>
           <p className="lead">Immerse yourself in Naad Yog, sound healing and the handpan, guided by an experienced sound-healing practitioner, musician and audio engineer.</p>
           <div className="course-grid">{courses.map((course) => <article className="course-card" key={course.title}>
-            <div className={`course-visual ${course.visual}`}><div>{course.badges.map((badge, i) => <span className={i ? "badge blue" : "badge"} key={badge}>{badge}</span>)}</div><span className="instrument-mark">{course.visual === "sound" ? "◉" : "⌁"}</span><div className="visual-note">{course.note}</div></div>
+            <div className={`course-visual ${course.visual}${course.photo ? " has-photo" : ""}`}>{course.photo && <img className="course-photo" src={course.photo} alt={course.alt} width={1200} height={800} loading="lazy" />}<div>{course.badges.map((badge, i) => <span className={i ? "badge blue" : "badge"} key={badge}>{badge}</span>)}</div>{!course.photo && <span className="instrument-mark">{course.visual === "sound" ? "◉" : "⌁"}</span>}<div className="visual-note">{course.note}</div></div>
             <div className="course-body"><div className="mini-label">{course.label}</div><h3>{course.title}</h3><p>{course.text}</p><ul>{course.bullets.map(b => <li key={b}><Check />{b}</li>)}</ul><a className="text-link" href="#contact">{course.link}<ArrowRight /></a></div>
           </article>)}</div>
         </section>
