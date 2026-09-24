@@ -3,6 +3,9 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, Check, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/rishikesh-river.jpg";
+import logoAsset from "@/assets/svarashakti-logo.png.asset.json";
+import sessionsImage from "@/assets/sound-healing-sessions.jpg";
+import masterclassImage from "@/assets/handpan-masterclass.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,8 +30,10 @@ function Index() {
     ["✧", "Carry It Forward", "Tools and techniques designed to remain useful beyond the course — personally and professionally."],
   ];
   const courses = [
-    { visual: "sound", badges: ["7 DAYS", "MOST POPULAR"], note: "BOWLS · GONG · CHIMES · HANDPAN", label: "INTENSIVE CERTIFICATION", title: "Sound Healing Initiation", text: "A seven-day immersion in sound healing, Naad Yoga, instruments, intention and practical session work.", bullets: ["Modern + traditional sound healing", "Chakra work & individual session design", "Instrument practice & guided meditation", "Certification upon completion"], link: "Explore the program" },
-    { visual: "handpan", badges: ["FLEXIBLE"], note: "SOUND · STILLNESS · FLOW", label: "ALL LEVELS", title: "Handpan Classes", text: "Learn to listen, play and build a natural relationship with the handpan in the serene atmosphere of Rishikesh.", bullets: ["Single, 3-class & 7-day packages", "75–90 minute sessions", "Technique, rhythm & guided play", "Care, tuning & subtle sensitivity"], link: "Explore handpan classes" },
+    { visual: "sound", photo: undefined as string | undefined, alt: "", badges: ["7 DAYS", "MOST POPULAR"], note: "BOWLS · GONG · CHIMES · HANDPAN", label: "INTENSIVE CERTIFICATION", title: "Sound Healing Initiation", text: "A seven-day immersion in sound healing, Naad Yoga, instruments, intention and practical session work.", bullets: ["Modern + traditional sound healing", "Chakra work & individual session design", "Instrument practice & guided meditation", "Certification upon completion"], link: "Explore the program" },
+    { visual: "handpan", photo: undefined as string | undefined, alt: "", badges: ["FLEXIBLE"], note: "SOUND · STILLNESS · FLOW", label: "ALL LEVELS", title: "Handpan Classes", text: "Learn to listen, play and build a natural relationship with the handpan in the serene atmosphere of Rishikesh.", bullets: ["Single, 3-class & 7-day packages", "75–90 minute sessions", "Technique, rhythm & guided play", "Care, tuning & subtle sensitivity"], link: "Explore handpan classes" },
+    { visual: "sound", photo: sessionsImage, alt: "Sound healing session with crystal and Tibetan singing bowls", badges: ["PRIVATE & GROUP"], note: "BOWLS · GONG · CHIMES · HANDPAN", label: "Private & Group Bookings", title: "Sound Healing Sessions", text: "Deep, restorative sessions held one-to-one or in small groups in Rishikesh.", bullets: ["Deep vibrational immersion with gong, crystal & Tibetan singing bowls, chimes & handpan", "Release stress, restore balance & enter profound inner stillness", "Individual private sessions available — private group sessions for up to 8–10 people", "Occasional group workshops open to all — keep an eye out for upcoming dates"], link: "Book a session" },
+    { visual: "handpan", photo: masterclassImage, alt: "Group sound circle with singing bowls beside the river", badges: ["3 WEEKS", "ADVANCED"], note: "COMPOSITION · PERFORMANCE · RECORDING", label: "3-Week Professional Training", title: "Handpan Advanced Masterclass", text: "A professional-level training for players ready to perform, compose and record.", bullets: ["Complex compositions & improvisation", "Performance techniques & stage presence", "Recording & production essentials", "Guest masterclasses with global artists"], link: "Apply for the masterclass" },
   ];
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -48,7 +53,8 @@ function Index() {
           <img src={heroImage} alt="The Ganges flowing through the Himalayan foothills at sunrise" width={1920} height={1080} />
           <div className="hero-overlay" />
           <div className="hero-content">
-            <div className="eyebrow">NAAD — NATURE IN MOTION</div><div className="symbol">◌</div>
+            <div className="eyebrow">NAAD — NATURE IN MOTION</div>
+            <div className="hero-logo-wrap"><img className="hero-logo" src={logoAsset.url} alt="Svarashakti owl emblem" /></div>
             <h1>Svarashakti</h1><p className="hero-tag">The Power of Sound</p>
             <p className="location">Rishikesh, Uttarakhand · India</p>
             <div className="hero-actions"><Button asChild variant="gold" size="hero"><a href="#courses">Explore Courses</a></Button><Button asChild variant="glass" size="hero"><a href="#experience">Meet the Facilitator</a></Button></div>
@@ -66,7 +72,7 @@ function Index() {
           <div className="section-kicker">TRAINING PROGRAMS</div><h2>Courses &amp; Certifications</h2>
           <p className="lead">Immerse yourself in Naad Yog, sound healing and the handpan, guided by an experienced sound-healing practitioner, musician and audio engineer.</p>
           <div className="course-grid">{courses.map((course) => <article className="course-card" key={course.title}>
-            <div className={`course-visual ${course.visual}`}><div>{course.badges.map((badge, i) => <span className={i ? "badge blue" : "badge"} key={badge}>{badge}</span>)}</div><span className="instrument-mark">{course.visual === "sound" ? "◉" : "⌁"}</span><div className="visual-note">{course.note}</div></div>
+            <div className={`course-visual ${course.visual}${course.photo ? " has-photo" : ""}`}>{course.photo && <img className="course-photo" src={course.photo} alt={course.alt} width={1200} height={800} loading="lazy" />}<div>{course.badges.map((badge, i) => <span className={i ? "badge blue" : "badge"} key={badge}>{badge}</span>)}</div>{!course.photo && <span className="instrument-mark">{course.visual === "sound" ? "◉" : "⌁"}</span>}<div className="visual-note">{course.note}</div></div>
             <div className="course-body"><div className="mini-label">{course.label}</div><h3>{course.title}</h3><p>{course.text}</p><ul>{course.bullets.map(b => <li key={b}><Check />{b}</li>)}</ul><a className="text-link" href="#contact">{course.link}<ArrowRight /></a></div>
           </article>)}</div>
         </section>
