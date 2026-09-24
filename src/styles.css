@@ -164,6 +164,9 @@ h1,h2,h3,.brand,.footer-brand { font-family: var(--font-serif); }
 .hero-content { position:relative; text-align:center; z-index:2; margin-top:40px; animation:rise 1s ease both; }
 .eyebrow,.section-kicker,.mini-label { font-size:10px; font-weight:600; letter-spacing:.28em; color:var(--primary); }
 .symbol { font:400 32px var(--font-serif); color:var(--primary); margin:18px 0 4px; }
+.hero-logo-wrap { display:flex; justify-content:center; align-items:center; margin:20px 0 22px; }
+.hero-logo { display:block; width:auto; height:88px; max-width:min(320px,70vw); object-fit:contain; filter:drop-shadow(0 6px 22px rgb(0 0 0 / .45)); }
+@media (max-width: 800px) { .hero-logo { height:62px; } .hero-logo-wrap { margin:14px 0 16px; } }
 .hero h1 { font-family:"Italiana",serif; font-size:clamp(68px,10vw,138px); font-weight:400; line-height:.85; margin:0; }
 .hero-tag { font:500 clamp(24px,3vw,39px) var(--font-serif); font-style:italic; margin:17px 0; }
 .location { text-transform:uppercase; letter-spacing:.24em; font-size:9px; opacity:.82; }
@@ -180,7 +183,9 @@ h1,h2,h3,.brand,.footer-brand { font-family: var(--font-serif); }
 .feature-icon { font:400 28px var(--font-serif); color:var(--primary); height:45px; }
 .feature h3 { font-size:22px; margin:15px 0 12px; }.feature p,.course-body p,.experience-copy>p { color:var(--muted-foreground); font-size:13px; line-height:1.8; }
 .section-tint { background:var(--muted); }
-.course-grid { max-width:1100px; margin:60px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+.course-grid { max-width:1100px; margin:60px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:start; }
+.course-visual.has-photo { background:linear-gradient(180deg,oklch(0 0 0/.35),oklch(0 0 0/.15) 45%,oklch(0 0 0/.45)); }
+.course-photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1; }
 .course-card { background:var(--card); border:1px solid var(--border); }
 .course-visual { min-height:285px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; color:var(--primary-foreground); position:relative; overflow:hidden; }
 .course-visual.sound { background:radial-gradient(circle at center,oklch(.66 .09 78/.7) 0 3%,transparent 3.5%),radial-gradient(circle at center,transparent 0 18%,oklch(.8 .08 78/.25) 18.5% 19%,transparent 19.5%),linear-gradient(145deg,oklch(.27 .06 196),oklch(.12 .03 203)); }
