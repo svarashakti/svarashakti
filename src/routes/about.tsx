@@ -81,7 +81,7 @@ function About() {
           <p className="about-tagline">Questions about the courses, sessions or the handpan? Start with a conversation.</p>
           <div className="about-connect-actions">
             <Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088">WhatsApp Tushar</a></Button>
-            <Button asChild variant="glass" size="hero"><a href="mailto:svarashakti.963@gmail.com">Email Tushar</a></Button>
+            <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com">Email Tushar</a></Button>
           </div>
         </section>
       </main>
