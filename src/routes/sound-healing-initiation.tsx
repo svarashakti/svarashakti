@@ -86,7 +86,7 @@ const curriculum = [
 function CourseDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground course-page">
       <header className={`site-header header-light${menuOpen ? " nav-open" : ""}`}>
         <Link className="brand" to="/"><span>Svarashakti</span><small>EST. 2010</small></Link>
         <nav className={menuOpen ? "nav-open" : ""} aria-label="Main navigation">
