@@ -8,6 +8,7 @@ import sessionsImage from "@/assets/sound-healing-sessions.jpg";
 import masterclassImage from "@/assets/handpan-masterclass.jpg";
 import initiationImage from "@/assets/sound-healing-initiation.png.asset.json";
 import handpanImage from "@/assets/handpan-classes.png.asset.json";
+import experienceImage from "@/assets/tushar-handpan.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
