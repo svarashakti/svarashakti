@@ -232,3 +232,55 @@ footer { background:oklch(.17 .035 201); color:oklch(1 0 0/.76); padding:65px ma
 @keyframes rise { from { opacity:0; transform:translateY(18px) } to { opacity:1; transform:none } } @keyframes bob { 50% { transform:translateY(5px) } }
 @media (max-width: 800px) { .site-header { height:74px; }.menu-toggle { display:block; z-index:3; }.site-header nav { display:none; position:absolute; inset:0 0 auto; min-height:100vh; background:var(--foreground); flex-direction:column; justify-content:center; }.site-header nav.nav-open { display:flex; }.hero { min-height:700px; max-height:none; }.hero h1 { font-size:63px; }.hero-actions { flex-direction:column; align-items:center; }.section { padding:80px 22px; }.feature-grid,.course-grid,.split,.footer-grid { grid-template-columns:1fr; }.feature-grid { margin-top:45px; }.feature { border-right:0; border-bottom:1px solid var(--border); }.course-body { padding:28px 24px; }.split { gap:45px; }.river-art { height:390px; }.cta h2 { font-size:49px; }.footer-grid { gap:28px; }.about-hero { padding-top:130px; }.about-photo { margin-top:45px; }.about-photo img { height:340px; border-radius:18px; }.about-story { padding:70px 22px 10px; }.about-story h3 { margin-top:42px; }.about-stats { grid-template-columns:1fr; gap:14px; margin-top:55px; }.about-mission { padding:75px 22px 10px; }.about-connect { padding:75px 22px 90px; }.about-connect-actions { flex-direction:column; align-items:center; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { animation:none!important; } }
+
+/* ---- Sound Healing Initiation course page ---- */
+.course-hero { position:relative; min-height:520px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.course-hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.course-hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgb(12 14 16 / .55), rgb(12 14 16 / .35) 45%, rgb(12 14 16 / .65)); }
+.course-hero-content { position:relative; z-index:1; text-align:center; padding:150px 24px 90px; max-width:900px; }
+.course-hero-content .section-kicker { color:#fff; }
+.course-hero-content h1 { font:600 clamp(46px,6.5vw,84px) var(--font-serif); color:#fff; margin:10px 0 18px; }
+.course-hero-content p { color:rgb(255 255 255 / .92); font-size:clamp(16px,2vw,20px); line-height:1.8; max-width:720px; margin:0 auto; }
+
+.course-overview { max-width:900px; margin:0 auto; padding:95px 24px 30px; }
+.course-overview h2, .course-curriculum h2, .course-included h2 { font:600 clamp(40px,5vw,58px) var(--font-serif); color:var(--foreground); margin:0 0 34px; }
+.course-overview p { color:var(--muted-foreground); font-size:16.5px; line-height:1.9; margin:0 0 24px; }
+.course-facts { margin-top:55px; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; background:var(--muted); padding:34px 26px; border-radius:18px; }
+.course-fact { text-align:center; }
+.course-fact span { display:block; font-size:12px; letter-spacing:.14em; color:var(--muted-foreground); margin-bottom:8px; }
+.course-fact b { font:600 26px var(--font-serif); color:var(--primary); }
+.course-fact b s { display:block; font-size:15px; font-weight:400; color:var(--muted-foreground); text-decoration-thickness:1.5px; margin-bottom:2px; }
+.course-fact b small { font-size:14px; font-weight:500; }
+
+.course-curriculum { max-width:1000px; margin:0 auto; padding:75px 24px 20px; }
+.day-list { display:grid; gap:28px; }
+.day-card { background:var(--muted); border-radius:20px; padding:42px 44px; }
+.day-head { display:flex; align-items:center; gap:16px; margin-bottom:26px; flex-wrap:wrap; }
+.day-badge { background:var(--primary); color:var(--primary-foreground); font-size:13px; font-weight:600; letter-spacing:.06em; padding:7px 16px; border-radius:999px; white-space:nowrap; }
+.day-leaf { font-size:24px; }
+.day-head h3 { font:600 clamp(22px,3vw,30px) var(--font-serif); color:var(--foreground); margin:0; }
+.day-section { margin-bottom:20px; }
+.day-section:last-child { margin-bottom:0; }
+.day-label { font-size:12.5px; font-weight:700; letter-spacing:.14em; color:var(--primary); margin-bottom:10px; }
+.day-card ul { list-style:none; margin:0; padding:0; }
+.day-card li { color:var(--muted-foreground); font-size:15.5px; line-height:1.65; padding:5px 0 5px 0; }
+.day-bullets li { font-size:16px; }
+
+.course-included { max-width:1000px; margin:0 auto; padding:85px 24px 20px; }
+.included-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px 40px; background:var(--muted); border-radius:20px; padding:42px 44px; }
+.included-grid div { color:var(--muted-foreground); font-size:16px; line-height:1.7; }
+
+.course-cta { text-align:center; padding:100px max(6vw,24px) 120px; }
+.course-cta h2 { font:600 clamp(40px,5vw,58px) var(--font-serif); margin:12px 0 18px; }
+.course-cta p { color:var(--muted-foreground); max-width:640px; margin:0 auto; line-height:1.85; }
+
+@media (max-width: 800px) {
+  .course-hero { min-height:440px; }
+  .course-hero-content { padding:120px 22px 70px; }
+  .course-overview, .course-curriculum, .course-included { padding-top:70px; }
+  .course-facts { grid-template-columns:repeat(2,1fr); gap:22px 14px; padding:28px 18px; }
+  .day-card { padding:30px 24px; }
+  .included-grid { grid-template-columns:1fr; padding:32px 26px; }
+  .course-cta { padding:75px 22px 90px; }
+  .course-cta .about-connect-actions { flex-direction:column; align-items:center; }
+}
