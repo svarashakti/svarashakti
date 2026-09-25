@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowDown, ArrowRight, Check, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -44,7 +44,7 @@ function Index() {
         <a className="brand" href="#top"><span>Svarashakti</span><small>EST. 2010</small></a>
         <nav className={menuOpen ? "nav-open" : ""} aria-label="Main navigation">
           <a className="active" href="#top" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#experience" onClick={() => setMenuOpen(false)}>About</a>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
           <a href="#courses" onClick={() => setMenuOpen(false)}>Courses</a>
           <a className="nav-cta" href="#contact" onClick={() => setMenuOpen(false)}>Book Now</a>
         </nav>
@@ -60,7 +60,7 @@ function Index() {
             <div className="hero-logo-wrap"><img className="hero-logo" src={logoAsset.url} alt="Svarashakti owl emblem" /></div>
             <h1>Svarashakti</h1><p className="hero-tag">The Power of Sound</p>
             <p className="location">Rishikesh, Uttarakhand · India</p>
-            <div className="hero-actions"><Button asChild variant="gold" size="hero"><a href="#courses">Explore Courses</a></Button><Button asChild variant="glass" size="hero"><a href="#experience">Meet the Facilitator</a></Button></div>
+            <div className="hero-actions"><Button asChild variant="gold" size="hero"><a href="#courses">Explore Courses</a></Button><Button asChild variant="glass" size="hero"><Link to="/about">Meet the Facilitator</Link></Button></div>
           </div>
           <a className="scroll-cue" href="#intro">SCROLL TO EXPLORE <ArrowDown /></a>
         </section>
@@ -80,11 +80,11 @@ function Index() {
           </article>)}</div>
         </section>
 
-        <section className="section experience" id="experience"><div className="split"><div className="experience-copy"><div className="section-kicker">THE RISHIKESH EXPERIENCE</div><h2>Learn where the river teaches you to listen.</h2><p>Set in the spiritual heart of Rishikesh, Svarashakti brings together the stillness of the Himalayas, the presence of the Ganges and the living practice of sound.</p><blockquote>“Naad is not only something we hear. It is something we learn to notice.”</blockquote><Button asChild variant="gold" size="hero"><a href="#contact">Meet Tushar</a></Button></div><div className="river-art"><img src={experienceImage.url} alt="Tushar playing the handpan during a sound healing session" width={1060} height={1520} loading="lazy"/><span>RISHIKESH<small>UTTARAKHAND · INDIA</small></span></div></div></section>
+        <section className="section experience" id="experience"><div className="split"><div className="experience-copy"><div className="section-kicker">THE RISHIKESH EXPERIENCE</div><h2>Learn where the river teaches you to listen.</h2><p>Set in the spiritual heart of Rishikesh, Svarashakti brings together the stillness of the Himalayas, the presence of the Ganges and the living practice of sound.</p><blockquote>“Naad is not only something we hear. It is something we learn to notice.”</blockquote><Button asChild variant="gold" size="hero"><Link to="/about">Meet Tushar</Link></Button></div><div className="river-art"><img src={experienceImage.url} alt="Tushar playing the handpan during a sound healing session" width={1060} height={1520} loading="lazy"/><span>RISHIKESH<small>UTTARAKHAND · INDIA</small></span></div></div></section>
 
         <section className="section cta" id="contact"><div className="cta-inner"><div className="section-kicker">BEGIN YOUR JOURNEY</div><h2>Come to the sound.</h2><p>Whether you are beginning your healing practice, deepening your relationship with sound, or learning the handpan — start with a conversation.</p><Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088">Enquire on WhatsApp</a></Button></div></section>
       </main>
-      <footer><div className="footer-grid"><div><div className="footer-brand">Svarashakti</div><p><em>Naad — Nature in motion.</em><br/>Transforming lives through the power of sound.</p></div><div><h4>Quick Links</h4><a href="#top">Home</a><a href="#experience">About</a><a href="#courses">Courses</a><a href="#contact">Book Now</a></div><div><h4>Connect</h4><a href="mailto:svarashakti.963@gmail.com">svarashakti.963@gmail.com</a><a href="tel:+919891304088">+91 98913 04088</a><a href="https://instagram.com/svarashakti">@svarashakti</a></div></div><div className="footer-bottom">© 2026 Svarashakti Sound Healing School · Rishikesh, India</div></footer>
+      <footer><div className="footer-grid"><div><div className="footer-brand">Svarashakti</div><p><em>Naad — Nature in motion.</em><br/>Transforming lives through the power of sound.</p></div><div><h4>Quick Links</h4><a href="#top">Home</a><Link to="/about">About</Link><a href="#courses">Courses</a><a href="#contact">Book Now</a></div><div><h4>Connect</h4><a href="mailto:svarashakti.963@gmail.com">svarashakti.963@gmail.com</a><a href="tel:+919891304088">+91 98913 04088</a><a href="https://instagram.com/svarashakti">@svarashakti</a></div></div><div className="footer-bottom">© 2026 Svarashakti Sound Healing School · Rishikesh, India</div></footer>
     </div>
   );
 }
