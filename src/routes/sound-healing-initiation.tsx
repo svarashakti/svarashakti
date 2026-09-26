@@ -49,7 +49,7 @@ const curriculum = [
     day: "Day 4",
     title: "Vibration & Healing the Human System",
     sections: [
-      { label: "THEORY", items: ["Sound's effect on body, mind, emotions", "Brain–heart coherence", "Binaural beats, Solfeggio, Isochronic tones"] },
+      { label: "THEORY", items: ["Sound's effect on body, mind, emotions", "Anatomy & physiology", "Brain–heart coherence", "Binaural beats, Solfeggio, Isochronic tones"] },
       { label: "PRACTICE", items: ["Creating sound atmospheres", "Emotional release"] },
       { label: "NAAD YOGA PRACTICE", items: ["Nadi Activation through Sound — using humming & vibration to activate energy channels"] },
     ],
