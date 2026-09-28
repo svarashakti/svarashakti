@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Content-rich offerings use dedicated TanStack route pages so each service remains shareable, searchable, and easy to expand.
