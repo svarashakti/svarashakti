@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Image as ImageIcon, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/sound-healing-sessions")({
@@ -89,10 +89,7 @@ function SoundHealingSessions() {
 
       <main>
         <section className="course-hero sessions-hero">
-          <div className="sessions-photo-placeholder" aria-label="Reserved space for a sound healing session photo">
-            <ImageIcon aria-hidden="true" />
-            <span>PHOTO COMING SOON</span>
-          </div>
+          <div className="sessions-photo-placeholder" role="img" aria-label="Reserved space for a sound healing session photo" />
           <div className="course-hero-overlay" />
           <div className="course-hero-content">
             <div className="section-kicker">PRIVATE · GROUP · CHAKRA</div>
