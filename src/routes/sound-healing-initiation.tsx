@@ -164,7 +164,7 @@ function CourseDetail() {
           <p>Small groups and personal attention — start with a conversation to book your place in the next batch.</p>
           <div className="about-connect-actions">
             <Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088?text=Hi%20Svarashakti%2C%20I%27d%20like%20to%20enquire%20about%20the%20Sound%20Healing%20Initiation%20course.">Enquire on WhatsApp</a></Button>
-            <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com">Email Us</a></Button>
+            <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com?subject=Sound%20Healing%20Initiation%20Course%20Enquiry">Email Us</a></Button>
           </div>
         </section>
       </main>

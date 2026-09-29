@@ -169,7 +169,7 @@ function SoundHealingSessions() {
           <blockquote>Listen. Feel. Slow down.<br />Let the sound create the space.</blockquote>
           <div className="about-connect-actions">
             <Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088?text=Hi%20Svarashakti%2C%20I%27d%20like%20to%20book%20a%20sound%20healing%20session.">Enquire on WhatsApp</a></Button>
-            <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com">Email Us</a></Button>
+            <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com?subject=Sound%20Healing%20Session%20Enquiry">Email Us</a></Button>
           </div>
         </section>
       </main>
