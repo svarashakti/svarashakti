@@ -334,8 +334,9 @@ footer { background:oklch(.17 .035 201); color:oklch(1 0 0/.76); padding:65px ma
   .class-options { grid-template-columns:1fr; }
   .class-option { padding:28px 22px; }
   .sessions-band, .sessions-stillness { padding:70px 22px; }
-  .practice-grid, .session-type-grid { grid-template-columns:1fr; }
-  .practice-grid { padding:28px 24px; }
+  .practice-grid, .session-type-grid, .retreat-formats { grid-template-columns:1fr; }
+  .practice-grid, .retreat-formats { padding:28px 24px; }
+  .retreat-quote { font-size:19px; }
   .session-type { padding:30px 24px; }
   .experience-steps { grid-template-columns:1fr; border-top:0; }
   .experience-step { border-right:0; border-bottom:1px solid var(--border); padding:24px 0; }
