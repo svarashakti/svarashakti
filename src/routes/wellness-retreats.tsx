@@ -130,7 +130,7 @@ function WellnessRetreats() {
           <p>If you are organising a retreat, running a wellness space, or looking to introduce authentic sound and Nāda Yoga practices into your program, we would be happy to collaborate.</p>
           <blockquote><strong>Let's create a meaningful sound experience for your guests.</strong></blockquote>
           <div className="about-connect-actions">
-            <Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088">Enquire on WhatsApp</a></Button>
+            <Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088?text=Hi%20Svarashakti%2C%20I%27d%20like%20to%20enquire%20about%20sound%20experiences%20for%20our%20retreat%20or%20wellness%20space.">Enquire on WhatsApp</a></Button>
             <Button asChild variant="outline" size="hero"><a href="mailto:svarashakti.963@gmail.com?subject=Retreat%20%26%20Wellness%20Program%20Enquiry">Enquire for Retreat &amp; Wellness Programs</a></Button>
           </div>
         </section>
