@@ -315,6 +315,12 @@ footer { background:oklch(.17 .035 201); color:oklch(1 0 0/.76); padding:65px ma
 .experience-step p { color:var(--muted-foreground); font-size:14px; line-height:1.7; margin:0; }
 .sessions-closing blockquote { margin:28px auto 36px; color:var(--primary); font:600 27px/1.55 var(--font-serif); }
 
+.retreat-formats { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin:35px 0 0; padding:34px 38px; background:var(--background); border-radius:20px; }
+.retreat-format span { display:block; color:var(--primary); font-size:11px; font-weight:700; letter-spacing:.16em; margin-bottom:8px; }
+.retreat-format p { margin:0; color:var(--muted-foreground); font-size:15px; line-height:1.7; }
+.retreat-quote { margin:45px auto 0; max-width:760px; text-align:center; font:italic 500 22px/1.6 var(--font-serif); color:var(--muted-foreground); }
+.sessions-closing blockquote strong { color:var(--foreground); }
+
 @media (max-width: 800px) {
   .course-page .course-hero { margin-top:74px; }
   .course-hero { min-height:440px; }
