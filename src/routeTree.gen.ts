@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as HandpanClassesRouteImport } from './routes/handpan-classes'
 import { Route as SoundHealingInitiationRouteImport } from './routes/sound-healing-initiation'
 import { Route as SoundHealingSessionsRouteImport } from './routes/sound-healing-sessions'
+import { Route as WellnessRetreatsRouteImport } from './routes/wellness-retreats'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,6 +41,11 @@ const SoundHealingSessionsRoute = SoundHealingSessionsRouteImport.update({
   path: '/sound-healing-sessions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WellnessRetreatsRoute = WellnessRetreatsRouteImport.update({
+  id: '/wellness-retreats',
+  path: '/wellness-retreats',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/handpan-classes': typeof HandpanClassesRoute
   '/sound-healing-initiation': typeof SoundHealingInitiationRoute
   '/sound-healing-sessions': typeof SoundHealingSessionsRoute
+  '/wellness-retreats': typeof WellnessRetreatsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/handpan-classes': typeof HandpanClassesRoute
   '/sound-healing-initiation': typeof SoundHealingInitiationRoute
   '/sound-healing-sessions': typeof SoundHealingSessionsRoute
+  '/wellness-retreats': typeof WellnessRetreatsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,6 +70,7 @@ export interface FileRoutesById {
   '/handpan-classes': typeof HandpanClassesRoute
   '/sound-healing-initiation': typeof SoundHealingInitiationRoute
   '/sound-healing-sessions': typeof SoundHealingSessionsRoute
+  '/wellness-retreats': typeof WellnessRetreatsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -71,6 +80,7 @@ export interface FileRouteTypes {
     | '/handpan-classes'
     | '/sound-healing-initiation'
     | '/sound-healing-sessions'
+    | '/wellness-retreats'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -78,6 +88,7 @@ export interface FileRouteTypes {
     | '/handpan-classes'
     | '/sound-healing-initiation'
     | '/sound-healing-sessions'
+    | '/wellness-retreats'
   id:
     | '__root__'
     | '/'
@@ -85,6 +96,7 @@ export interface FileRouteTypes {
     | '/handpan-classes'
     | '/sound-healing-initiation'
     | '/sound-healing-sessions'
+    | '/wellness-retreats'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -93,6 +105,7 @@ export interface RootRouteChildren {
   HandpanClassesRoute: typeof HandpanClassesRoute
   SoundHealingInitiationRoute: typeof SoundHealingInitiationRoute
   SoundHealingSessionsRoute: typeof SoundHealingSessionsRoute
+  WellnessRetreatsRoute: typeof WellnessRetreatsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -132,6 +145,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SoundHealingSessionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/wellness-retreats': {
+      id: '/wellness-retreats'
+      path: '/wellness-retreats'
+      fullPath: '/wellness-retreats'
+      preLoaderRoute: typeof WellnessRetreatsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -141,6 +161,7 @@ const rootRouteChildren: RootRouteChildren = {
   HandpanClassesRoute: HandpanClassesRoute,
   SoundHealingInitiationRoute: SoundHealingInitiationRoute,
   SoundHealingSessionsRoute: SoundHealingSessionsRoute,
+  WellnessRetreatsRoute: WellnessRetreatsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
