@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import handpanImage from "@/assets/handpan-classes.png.asset.json";
+import handpanImage from "@/assets/handpan-classes-art.png";
 
 export const Route = createFileRoute("/handpan-classes")({
   head: () => ({
@@ -83,7 +83,7 @@ function HandpanCourse() {
 
       <main>
         <section className="course-hero">
-          <img src={handpanImage.url} alt="Students playing handpans together in a sunlit pavilion overlooking the river in Rishikesh" />
+          <img src={handpanImage} alt="Handpan instruments on a wooden table at golden hour overlooking the river valley in Rishikesh" />
           <div className="course-hero-overlay" />
           <div className="course-hero-content">
             <div className="section-kicker">ALL LEVELS · FLEXIBLE PACKAGES</div>
