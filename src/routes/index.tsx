@@ -8,7 +8,7 @@ import sessionsImage from "@/assets/sound-healing-sessions.jpg";
 import retreatsImage from "@/assets/handpan-masterclass.jpg";
 import initiationImage from "@/assets/sound-healing-initiation-art.png";
 import handpanImage from "@/assets/handpan-classes-art.png";
-import experienceImage from "@/assets/tushar-handpan.png.asset.json";
+import experienceImage from "@/assets/experience-tushar.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,7 +80,7 @@ function Index() {
           </article>)}</div>
         </section>
 
-        <section className="section experience" id="experience"><div className="split"><div className="experience-copy"><div className="section-kicker">THE RISHIKESH EXPERIENCE</div><h2>Learn where the river teaches you to listen.</h2><p>Set in the spiritual heart of Rishikesh, Svarashakti brings together the stillness of the Himalayas, the presence of the Ganges and the living practice of sound.</p><blockquote>“Naad is not only something we hear. It is something we learn to notice.”</blockquote><Button asChild variant="gold" size="hero"><Link to="/about">Meet Tushar</Link></Button></div><div className="river-art"><img src={experienceImage.url} alt="Tushar playing the handpan during a sound healing session" width={1060} height={1520} loading="lazy"/><span>RISHIKESH<small>UTTARAKHAND · INDIA</small></span></div></div></section>
+        <section className="section experience" id="experience"><div className="split"><div className="experience-copy"><div className="section-kicker">THE RISHIKESH EXPERIENCE</div><h2>Learn where the river teaches you to listen.</h2><p>Set in the spiritual heart of Rishikesh, Svarashakti brings together the stillness of the Himalayas, the presence of the Ganges and the living practice of sound.</p><blockquote>“Naad is not only something we hear. It is something we learn to notice.”</blockquote><Button asChild variant="gold" size="hero"><Link to="/about">Meet Tushar</Link></Button></div><div className="river-art"><img src={experienceImage} alt="Tushar playing the handpan during a sound healing session" width={1060} height={1330} loading="lazy"/><span>RISHIKESH<small>UTTARAKHAND · INDIA</small></span></div></div></section>
 
         <section className="section cta" id="contact"><div className="cta-inner"><div className="section-kicker">BEGIN YOUR JOURNEY</div><h2>Come to the sound.</h2><p>Whether you are beginning your healing practice, deepening your relationship with sound, or learning the handpan — start with a conversation.</p><div className="about-connect-actions"><Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088?text=Hi%20Svarashakti%2C%20I%27d%20like%20to%20enquire%20about%20your%20courses%20and%20sessions.">Enquire on WhatsApp</a></Button><Button asChild variant="glass" size="hero"><a href="mailto:svarashakti.963@gmail.com?subject=Course%20%2F%20Session%20Enquiry%20from%20Website">Enquire by Email</a></Button></div></div></section>
       </main>
