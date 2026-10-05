@@ -100,7 +100,7 @@ function CourseDetail() {
 
       <main>
         <section className="course-hero">
-          <img src={initiationImage.url} alt="Tibetan singing bowls, crystal bowls, gong, chimes and a handpan arranged on wood" />
+          <img src={initiationImage} alt="Tibetan singing bowls, crystal bowls, gong, chimes and a handpan arranged on wood" />
           <div className="course-hero-overlay" />
           <div className="course-hero-content">
             <div className="section-kicker">7-DAY INTENSIVE CERTIFICATION</div>
