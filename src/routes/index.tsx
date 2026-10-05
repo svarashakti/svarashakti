@@ -6,7 +6,7 @@ import heroImage from "@/assets/rishikesh-river.jpg";
 import logoAsset from "@/assets/svarashakti-logo.png.asset.json";
 import sessionsImage from "@/assets/sound-healing-sessions.jpg";
 import retreatsImage from "@/assets/handpan-masterclass.jpg";
-import initiationImage from "@/assets/sound-healing-initiation.png.asset.json";
+import initiationImage from "@/assets/sound-healing-initiation-art.png";
 import handpanImage from "@/assets/handpan-classes.png.asset.json";
 import experienceImage from "@/assets/tushar-handpan.png.asset.json";
 

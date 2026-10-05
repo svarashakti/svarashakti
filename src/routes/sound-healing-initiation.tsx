@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import initiationImage from "@/assets/sound-healing-initiation.png.asset.json";
+import initiationImage from "@/assets/sound-healing-initiation-art.png";
 
 export const Route = createFileRoute("/sound-healing-initiation")({
   head: () => ({
