@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import tusharImage from "@/assets/founder-session-hd.png";
+import tusharImage from "@/assets/founder-session-v2.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
