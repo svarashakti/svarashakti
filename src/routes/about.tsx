@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import tusharImage from "@/assets/founder-session-v2.png";
+import tusharImage from "@/assets/founder-reference.png.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -41,7 +41,7 @@ function About() {
           <p className="about-aka">aka Rasayana</p>
           <p className="about-tagline">From the pulsating energy of festival stages to the profound stillness of sound healing — a journey of transformation through sound.</p>
           <div className="about-photo">
-            <img src={tusharImage} alt="Tushar Nirankari leading a sound healing session" />
+            <img src={tusharImage.url} alt="Tushar Nirankari playing handpan beside the river during a sound healing session" />
           </div>
         </section>
 
