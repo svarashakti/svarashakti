@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, Check, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/rishikesh-river.jpg";
-import logoAsset from "@/assets/svarashakti-logo.png.asset.json";
+import logoAsset from "@/assets/svarashakti-logo-bright.png.asset.json";
 import sessionsImage from "@/assets/sound-healing-sessions.jpg";
 import retreatsImage from "@/assets/handpan-masterclass.jpg";
 import initiationImage from "@/assets/sound-healing-initiation-art.png";
