@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, Check, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/rishikesh-river.jpg";
-import logoAsset from "@/assets/svarashakti-logo-bright.png.asset.json";
+import logoImage from "@/assets/owl-logo-transparent.png";
 import sessionsImage from "@/assets/sound-healing-sessions.jpg";
 import retreatsImage from "@/assets/handpan-masterclass.jpg";
 import initiationImage from "@/assets/sound-healing-initiation-art.png";
@@ -57,7 +57,7 @@ function Index() {
           <div className="hero-overlay" />
           <div className="hero-content">
             <div className="eyebrow">NAAD — NATURE IN MOTION</div>
-            <div className="hero-logo-wrap"><img className="hero-logo" src={logoAsset.url} alt="Svarashakti owl emblem" /></div>
+            <div className="hero-logo-wrap"><img className="hero-logo" src={logoImage} alt="Svarashakti owl emblem" /></div>
             <h1>Svarashakti</h1><p className="hero-tag">The Power of Sound</p>
             <p className="location">Rishikesh, Uttarakhand · India</p>
             <div className="hero-actions"><Button asChild variant="gold" size="hero"><a href="#courses">Explore Courses</a></Button><Button asChild variant="glass" size="hero"><Link to="/about">Meet the Facilitator</Link></Button></div>
