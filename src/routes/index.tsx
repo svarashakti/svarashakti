@@ -10,6 +10,7 @@ import initiationImage from "@/assets/sound-healing-initiation-art.png";
 import handpanImage from "@/assets/handpan-classes-art.png";
 import experienceImage from "@/assets/experience-tushar.png";
 
+import { InstagramLink } from "@/components/instagram-link";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -84,7 +85,7 @@ function Index() {
 
         <section className="section cta" id="contact"><div className="cta-inner"><div className="section-kicker">BEGIN YOUR JOURNEY</div><h2>Come to the sound.</h2><p>Whether you are beginning your healing practice, deepening your relationship with sound, or learning the handpan — start with a conversation.</p><div className="about-connect-actions"><Button asChild variant="gold" size="hero"><a href="https://wa.me/919891304088?text=Hi%20Svarashakti%2C%20I%27d%20like%20to%20enquire%20about%20your%20courses%20and%20sessions.">Enquire on WhatsApp</a></Button><Button asChild variant="glass" size="hero"><a href="mailto:svarashakti.963@gmail.com?subject=Course%20%2F%20Session%20Enquiry%20from%20Website">Enquire by Email</a></Button></div></div></section>
       </main>
-      <footer><div className="footer-grid"><div><div className="footer-brand">Svarashakti</div><p><em>Naad — Nature in motion.</em><br/>Transforming lives through the power of sound.</p></div><div><h4>Quick Links</h4><a href="#top">Home</a><Link to="/about">About</Link><a href="#courses">Courses</a><a href="#contact">Book Now</a></div><div><h4>Connect</h4><a href="mailto:svarashakti.963@gmail.com">svarashakti.963@gmail.com</a><a href="tel:+919891304088">+91 98913 04088</a><a href="https://instagram.com/svarashakti">@svarashakti</a></div></div><div className="footer-bottom">© 2026 Svarashakti Sound Healing School · Rishikesh, India</div></footer>
+      <footer><div className="footer-grid"><div><div className="footer-brand">Svarashakti</div><p><em>Naad — Nature in motion.</em><br/>Transforming lives through the power of sound.</p></div><div><h4>Quick Links</h4><a href="#top">Home</a><Link to="/about">About</Link><a href="#courses">Courses</a><a href="#contact">Book Now</a></div><div><h4>Connect</h4><a href="mailto:svarashakti.963@gmail.com">svarashakti.963@gmail.com</a><a href="tel:+919891304088">+91 98913 04088</a><InstagramLink className="footer-ig" /></div></div><div className="footer-bottom">© 2026 Svarashakti Sound Healing School · Rishikesh, India</div></footer>
     </div>
   );
 }
