@@ -341,3 +341,8 @@ footer { background:oklch(.17 .035 201); color:oklch(1 0 0/.76); padding:65px ma
   .experience-steps { grid-template-columns:1fr; border-top:0; }
   .experience-step { border-right:0; border-bottom:1px solid var(--border); padding:24px 0; }
 }
+
+/* ---- Instagram link in footer ---- */
+.footer-grid a.footer-ig { display:flex; align-items:center; gap:9px; width:fit-content; }
+.footer-grid a.footer-ig svg { width:15px; height:15px; stroke-width:1.7; }
+.footer-grid a.footer-ig:hover { color:var(--primary); }
